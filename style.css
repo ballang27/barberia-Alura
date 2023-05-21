@@ -1,0 +1,257 @@
+body{
+    font-family: 'Roboto', sans-serif;      
+}
+
+header{
+    background-color: #bbbbbb;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: yellow;
+    text-decoration:underline;
+}
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px; 
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 3px solid #000;   
+    border-radius: 20px;
+}
+.productos li:hover{
+    border-color: yellow;
+}
+.productos li:active{
+    border-color: yellowgreen;
+    
+}
+.productos h2{
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.productos li:hover h2{
+    font-size: 30px;
+}
+.producto-descripcion{
+    font-size: 15px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copyrigth{
+    color: whitesmoke;
+    font-size: 12px;
+    margin: 20px;
+}
+
+form{
+    margin: 40px 0;
+}
+form label,form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px ;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width:40%;
+    padding: 15px 0 ;
+    font-size: 18 px;
+    font-weight: bold;
+    color: white;
+    background: orangered;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all ;
+    cursor: pointer;
+}
+.enviar:hover{
+    background:orange;
+    transform:scale(1.2);
+    
+
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: #555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid #000;
+    padding: 8px 15px;
+}
+/*aqui inicia nuestro css para nuestra homepage*/
+.principal{
+    background: #fefefe;
+    padding: 3em;
+
+}
+#banner{
+    width: 100%;
+
+}
+
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: #000;
+}
+.titulo-principal::first-letter{
+    font-weight: bold   ;
+
+}
+p::first-line{
+    font-style: italic  ;
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+    width: 940px;
+    margin: 0 auto;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+    background:linear-gradient(#fefefe, #888888) ;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40% ;
+    display:inline-block ;
+    vertical-align: top;    
+}
+.items{
+    line-height: 1.5;
+}
+.items:before{
+    content: "✮";
+}
+.items:first-child{
+    font-weight:bold ;
+}
+.imagen-Diferenciales{
+    width: 60%  ;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 10px #000;
+}
+.imagen-Diferenciales:hover{
+    opacity: 0.3;
+}
+.video{
+    width: 560px;
+    margin: 1em auto; 
+}
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    }
+
+    .lista-diferenciales{
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .imagen-diferenciales{
+        width: 100%;
+        box-shadow: 10px 10px 20px 10px #000000;
+        margin: 20px 0 0 0;
+    }
+
+    .caja-opciones{
+        display: flex;
+    }
+
+    .productos{
+        display: grid;
+        width: auto;
+        padding: 50px;
+    }
+
+    .productos li{ 
+        margin-left: 5px;
+        margin-bottom: 8%;
+        width: auto;
+    }
+}
